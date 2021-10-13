@@ -15,26 +15,36 @@
 
 <body style="background-color: #d8d7d7 ">
 
-    <div class="row text-center">
-        <div class="col-md-4">
-            <select name="operator" id="" class="form-control" required>
-                <option value="" selected> --select operator--</option>
-                <option value="plus"> + </option>
-                <option value="minus"> - </option>
-                <option value="multiply"> * </option>
-                <option value="divide"> / </option>
+    <div class="container">
+        <form action="" class="form-horizontal" method="POST">
 
-            </select>
-        </div>
 
-        <div class="col-md-4">
-            <input type="number" class="form-control" name="first" placeholder="Enter first number here" required>
-        </div>
+            <div class="row text-center m-5">
+                <div class="col-md-3">
+                    <select name="operator" id="" class="form-control" required>
+                        <option value="" selected> --select operator--</option>
+                        <option value="plus"> + </option>
+                        <option value="minus"> - </option>
+                        <option value="multiply"> * </option>
+                        <option value="divide"> / </option>
 
-        <div class="col-md-4">
-            <input type="number" class="form-control" name="second" placeholder="Enter second number here" required>
+                    </select>
+                </div>
 
-        </div>
+                <div class="col-md-3">
+                    <input type="number" class="form-control" name="first" placeholder="Enter first number here"
+                        required>
+                </div>
+
+                <div class="col-md-3">
+                    <input type="number" class="form-control" name="second" placeholder="Enter second number here"
+                        required>
+                </div>
+                <div class="col-md-3">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
     </div>
 
     <script src="js/jquery.js"></script>
