@@ -16,7 +16,8 @@
 <body style="background-color: #d8d7d7 ">
 
     <div class="container">
-        <form action="" class="form-horizontal" method="POST">
+        <form action="/calculate" class="form-horizontal" method="POST">
+            {{ csrf_field()  }}
 
 
             <div class="row text-center m-5">
