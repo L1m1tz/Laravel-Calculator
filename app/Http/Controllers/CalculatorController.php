@@ -25,8 +25,8 @@ class CalculatorController extends Controller
         }else {
             $result = 0;
         }
-        echo $result;
-        
+       // echo $result;
+        return redirect('/')->with('info','Your answer is :'.$result);
 
     }
 }
