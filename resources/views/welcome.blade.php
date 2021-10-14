@@ -15,9 +15,11 @@
 
 <body style="background-color: #d8d7d7 ">
 
-    <div class="container">
+    <div class="container text-center">
+
+        <h3>Laravel Arithmetic Calculator</h3>
         <form action="/calculate" class="form-horizontal" method="POST">
-            {{ csrf_field()  }}
+            {{ csrf_field() }}
 
 
             <div class="row text-center m-5">
@@ -46,6 +48,23 @@
                 </div>
             </div>
         </form>
+
+        <br>
+
+        <div class="row text-center">
+            <div class="col-md-2">
+
+            </div>
+            <div class="col-md-6">
+                @if (session('info'))
+                <div class="alert alert-info">
+                    {{ session('info') }}
+                </div>
+                    
+                @endif
+            </div>
+        </div>
+
     </div>
 
     <script src="js/jquery.js"></script>
